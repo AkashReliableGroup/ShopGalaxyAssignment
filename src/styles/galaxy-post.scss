@@ -1,0 +1,84 @@
+.vuegram-post {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.vuegram-post ~ .vuegram-post {
+  padding-top: 0;
+}
+
+.vuegram-post {
+  padding: 5px 0;
+
+  .header {
+    height: 30px;
+    border-bottom: 1px solid #fff;
+    margin: 0px 0px;
+    .image {
+      display: inline-block;
+    }
+
+    .level-left {
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
+      padding: 1rem 0px;
+    }
+
+    img {
+      border-radius: 99px;
+      width: auto;
+      height: 30px;
+      float: left;
+    }
+
+    .username {
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-left: 8px;
+    }
+  }
+
+  .image-container {
+    margin-top: 30px;
+    height: 330px;
+  }
+  video {
+    width: 100%;
+    height: 330px;
+  }
+
+  .content {
+    margin: 7.5px 10px;
+  }
+
+  .far.fa-heart,
+  .fas.fa-heart {
+    cursor: pointer;
+  }
+
+  .fas.fa-heart {
+    color: #f06595;
+  }
+
+  .likes {
+    margin: 5px 0;
+    margin-bottom: 5px !important;
+    font-size: 0.85rem;
+    font-weight: bold;
+  }
+
+  .caption {
+    font-size: 0.85rem;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.vuegram-post:last-child {
+  margin-bottom: 80px;
+}
